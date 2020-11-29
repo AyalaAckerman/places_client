@@ -1,0 +1,6 @@
+<div class="search-container">
+    <label>מה תרצו לחפש?</label>
+    <input  type="text" [(ngModel)]="theSearchText" [required]/>
+    <label class="dashes">---------------------</label>
+    <button [disabled]='theSearchText==" "'  [routerLink]="['/result',theSearchText]" >הצג מקומות קרובים</button>
+</div>

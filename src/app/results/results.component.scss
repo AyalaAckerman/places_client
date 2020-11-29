@@ -1,0 +1,72 @@
+:host {
+    display: block;
+    border: 1px solid black;
+    background-color: black;
+    size: 100%;
+    align-items: center;
+    color: white;
+    direction: rtl;
+}
+.allPage{
+     height: 623px;
+}
+.popularContainer{
+    padding-top: 90px;
+}
+.popularNumber{
+    color: #17C5B1;
+    font-size: 45px;
+    line-height: 70px;
+}
+button{
+    border: none;
+    line-height: 36px;
+    padding: 0 16px;
+    border-radius: 4px;
+    background-color:#17C5B1;
+    color: white;
+    float: left;
+    margin: 20px;
+    width: 120px;
+}
+button:focus{
+    border: none;
+    outline-width: 0;
+}
+.conteiner{
+    width: 600px;
+    margin: auto;
+}
+.searchResultsContainer{
+    margin-top: 50px;
+}
+label{
+    direction: rtl;
+    font-size: 18px;
+}
+.placesTitleContainer{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+.theSearchText{
+    font-weight:800;
+}
+.place{
+    background-color: #404040;
+    width: 75%;
+    margin-top: 10px;
+    line-height: 18px;
+    border-radius: 4px;
+    padding: 10px;
+    padding-right: 30px;
+}
+.adress{
+    color: #17C5B1;
+    font-size: 14px;
+}
+.error{
+    margin-bottom: 70%;
+    font-size: x-large;
+    margin-top: 30%;
+}

@@ -1,0 +1,24 @@
+<div   class="allPage" >
+    <button (click)="onEnd()">סיום</button>
+    <div class="conteiner">
+        <div class="popularContainer">
+            <label >החיפוש הפופולרי ביותר  |  </label>
+            <label class="theSearchText">"{{popularPlace.searchText}}"</label><br>
+            <label class="popularNumber">{{popularPlace.counter}}  </label>
+            <label>חיפושים</label>
+        </div>
+        <div  class="searchResultsContainer">
+            <div *ngIf='placesNum!=0'>
+                <label>{{placesNum}} המקומות הקרובים ל-</label>
+                <label class="theSearchText">{{searchText}}</label><br>
+            </div>
+                <div class="error" *ngIf='placesNum==0'>
+                    אין מקומות שתואמים לחיפוש שלך, אנא נסה שנית
+                </div>
+            <div *ngFor="let place of listOfPlaces" class="place">
+                <label>{{place.name}}</label><br>
+                <label class="adress">{{place.adress}}</label>
+            </div>
+        </div>
+    </div>
+</div>
